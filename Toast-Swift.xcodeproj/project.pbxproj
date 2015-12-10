@@ -12,7 +12,35 @@
 		151796F21BE68E4B004BA6E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 151796F11BE68E4B004BA6E5 /* Assets.xcassets */; };
 		151796F51BE68E4B004BA6E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 151796F31BE68E4B004BA6E5 /* LaunchScreen.storyboard */; };
 		151797001BE69026004BA6E5 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151796FF1BE69026004BA6E5 /* Toast.swift */; };
+		66DDC36D1C19A2ED002D1296 /* ToastSwiftFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 66DDC36C1C19A2ED002D1296 /* ToastSwiftFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		66DDC3711C19A2ED002D1296 /* ToastSwiftFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66DDC36A1C19A2ED002D1296 /* ToastSwiftFramework.framework */; };
+		66DDC3721C19A2ED002D1296 /* ToastSwiftFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 66DDC36A1C19A2ED002D1296 /* ToastSwiftFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		66DDC3761C19A2F4002D1296 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151796FF1BE69026004BA6E5 /* Toast.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		66DDC36F1C19A2ED002D1296 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 151796DF1BE68E4B004BA6E5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66DDC3691C19A2ED002D1296;
+			remoteInfo = ToastSwiftFramework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		66DDC3631C19A272002D1296 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				66DDC3721C19A2ED002D1296 /* ToastSwiftFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		151796E71BE68E4B004BA6E5 /* Toast-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Toast-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +50,21 @@
 		151796F41BE68E4B004BA6E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		151796F61BE68E4B004BA6E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = Demo/Info.plist; sourceTree = "<group>"; };
 		151796FF1BE69026004BA6E5 /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Toast.swift; path = Toast/Toast.swift; sourceTree = SOURCE_ROOT; };
+		66DDC36A1C19A2ED002D1296 /* ToastSwiftFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ToastSwiftFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		66DDC36C1C19A2ED002D1296 /* ToastSwiftFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToastSwiftFramework.h; sourceTree = "<group>"; };
+		66DDC36E1C19A2ED002D1296 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		151796E41BE68E4B004BA6E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66DDC3711C19A2ED002D1296 /* ToastSwiftFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66DDC3661C19A2ED002D1296 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +81,7 @@
 				151796FC1BE68E75004BA6E5 /* Demo */,
 				151796FD1BE68EAC004BA6E5 /* Supporting Files */,
 				151796FE1BE68EB5004BA6E5 /* Resources */,
+				66DDC36B1C19A2ED002D1296 /* ToastSwiftFramework */,
 				151796E81BE68E4B004BA6E5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				151796E71BE68E4B004BA6E5 /* Toast-Swift.app */,
+				66DDC36A1C19A2ED002D1296 /* ToastSwiftFramework.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -92,7 +133,27 @@
 			path = "Toast-Swift";
 			sourceTree = "<group>";
 		};
+		66DDC36B1C19A2ED002D1296 /* ToastSwiftFramework */ = {
+			isa = PBXGroup;
+			children = (
+				66DDC36C1C19A2ED002D1296 /* ToastSwiftFramework.h */,
+				66DDC36E1C19A2ED002D1296 /* Info.plist */,
+			);
+			path = ToastSwiftFramework;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		66DDC3671C19A2ED002D1296 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66DDC36D1C19A2ED002D1296 /* ToastSwiftFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		151796E61BE68E4B004BA6E5 /* Toast-Swift */ = {
@@ -102,15 +163,35 @@
 				151796E31BE68E4B004BA6E5 /* Sources */,
 				151796E41BE68E4B004BA6E5 /* Frameworks */,
 				151796E51BE68E4B004BA6E5 /* Resources */,
+				66DDC3631C19A272002D1296 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				66DDC3701C19A2ED002D1296 /* PBXTargetDependency */,
 			);
 			name = "Toast-Swift";
 			productName = "Toast-Swift";
 			productReference = 151796E71BE68E4B004BA6E5 /* Toast-Swift.app */;
 			productType = "com.apple.product-type.application";
+		};
+		66DDC3691C19A2ED002D1296 /* ToastSwiftFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66DDC3731C19A2ED002D1296 /* Build configuration list for PBXNativeTarget "ToastSwiftFramework" */;
+			buildPhases = (
+				66DDC3651C19A2ED002D1296 /* Sources */,
+				66DDC3661C19A2ED002D1296 /* Frameworks */,
+				66DDC3671C19A2ED002D1296 /* Headers */,
+				66DDC3681C19A2ED002D1296 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ToastSwiftFramework;
+			productName = ToastSwiftFramework;
+			productReference = 66DDC36A1C19A2ED002D1296 /* ToastSwiftFramework.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -124,6 +205,9 @@
 				TargetAttributes = {
 					151796E61BE68E4B004BA6E5 = {
 						CreatedOnToolsVersion = 7.1;
+					};
+					66DDC3691C19A2ED002D1296 = {
+						CreatedOnToolsVersion = 7.2;
 					};
 				};
 			};
@@ -141,6 +225,7 @@
 			projectRoot = "";
 			targets = (
 				151796E61BE68E4B004BA6E5 /* Toast-Swift */,
+				66DDC3691C19A2ED002D1296 /* ToastSwiftFramework */,
 			);
 		};
 /* End PBXProject section */
@@ -152,6 +237,13 @@
 			files = (
 				151796F51BE68E4B004BA6E5 /* LaunchScreen.storyboard in Resources */,
 				151796F21BE68E4B004BA6E5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66DDC3681C19A2ED002D1296 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,7 +260,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		66DDC3651C19A2ED002D1296 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66DDC3761C19A2F4002D1296 /* Toast.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		66DDC3701C19A2ED002D1296 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 66DDC3691C19A2ED002D1296 /* ToastSwiftFramework */;
+			targetProxy = 66DDC36F1C19A2ED002D1296 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		151796F31BE68E4B004BA6E5 /* LaunchScreen.storyboard */ = {
@@ -268,6 +376,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -280,11 +389,54 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.scalessec.Toast-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		66DDC3741C19A2ED002D1296 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ToastSwiftFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.scalessec.ToastSwiftFramework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		66DDC3751C19A2ED002D1296 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ToastSwiftFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.scalessec.ToastSwiftFramework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -308,6 +460,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		66DDC3731C19A2ED002D1296 /* Build configuration list for PBXNativeTarget "ToastSwiftFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66DDC3741C19A2ED002D1296 /* Debug */,
+				66DDC3751C19A2ED002D1296 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
